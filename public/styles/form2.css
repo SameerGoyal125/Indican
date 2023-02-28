@@ -1,0 +1,17 @@
+#myForm label{
+    color:#000;
+}
+#myForm input:focus{
+    outline: none;
+    border-bottom: 1px solid #3c71c4;
+}
+#formSubmit{
+    background-color: #3c71c4;
+    color: #fff;
+    border: 1px solid #80b1ff;
+}
+#formSubmit:hover{
+    background-color: transparent;
+    color: #3c71c4;
+    border: 1px solid #3c71c4;
+}

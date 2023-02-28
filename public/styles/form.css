@@ -1,0 +1,159 @@
+.form{
+    height:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+#myForm{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:100%;
+    
+    
+}
+#myForm input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    padding-right: 0;
+    
+}
+#myForm input:focus{
+    outline: none;
+    border-bottom: 1px solid red;
+}
+#myForm label{
+    font-size: 1.5rem;
+    margin:10px 0 0 0;
+    font-weight: 500;
+    color:grey;
+    padding: 0;
+}
+#formSubmit{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#formSubmit:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+#formSubmit:focus{
+    outline: none;
+}
+.form-body{
+    padding:5% 3%;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 30px;
+    padding-top: 0%;
+}
+
+#formclose{
+    width: 10%;
+    height: 50px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    left: 50%;
+}
+@media screen and (max-width: 760px){
+    .form-body{
+        width: 80%;
+        padding-bottom: 10%;
+    }
+}
+.required:after{
+    content: "*";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 5px;
+}
+.fullname,.email,.phone{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.nill::after{
+    content: "*This field is required";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 5px;
+    top: 0;
+}
+#form .nill input{
+    border-bottom: 1px solid red;
+}
+.invalid-email::after{
+    content: "*Please enter a valid email address";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 5px;
+    top: 0;
+}
+
+.invalid-phone::after{
+    content: "*Please enter a valid phone number";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 5px;
+    top: 0;
+}
+.invalid-name::after{
+    content: "*Please enter a valid name";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 5px;
+    top: 0;
+}
+#form .invalid-email input{
+    border-bottom: 1px solid red;
+}
+#form .invalid-name input{
+    border-bottom: 1px solid red;
+}
+#form .invalid-phone input{
+    border-bottom: 1px solid red;
+}

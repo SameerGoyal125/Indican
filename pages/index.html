@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/index1.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:ital,wght@1,900&family=Roboto:wght@500&family=Ubuntu+Mono&display=swap&family=Lato:wght@400&family=Spectral&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/disclaimer.css">
+
+    <title>IndiCan Overseas</title>
+</head>
+
+<body>
+    <div id="disclaimer" class="disclaimer"
+        style="color: black; height: auto; padding: 0 2%; display: flex; align-items: center; background-color: rgb(247, 207, 214);">
+
+        <p style="margin: 0 auto;width:93%"><span style="color: red;">
+                Disclaimer:-
+            </span> The application approval for Study Permit, Post Graduation Work Permit ,Permanent Residance or any
+            kind of visa is sole discretion of Immigration Refugees and Citizenship of Canada as per their rules and
+            regulations.</p>
+        <button id="close"
+            style="height: 10%;padding: 0; background-color: transparent; border-color: transparent;"><img
+                src="/static/close.png" alt="close" style="width:100%; height: 100%;"></button>
+    </div>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <img class="logo" src="/static/logo.PNG" alt="logo">
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a>Services</a>
+                        <ul class="nav-dropdown">
+                            <li ><a  href="/for-students">For Students</a></li>
+                            <li ><a  href="/test-preparation">Test Preparation</a></li>
+                            <li><a  href="/for-partners">For Partners</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/testimonials">Testimonials</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="form" id="form">
+        <div class="form-body">
+            <button id="formclose"
+                style="height: 10%;padding: 0; background-color: transparent; border-color: transparent;"><img
+                    src="/static/close.png" alt="close" style="width:30%;"></button>
+            <form id="myForm">
+
+                <h1 style="margin: 5% auto;">Enquiry Form</h1>
+                <div class="fullname">
+                    <label class="required">Full Name</label>
+                    <input id="full_name" name="full_name" class="input-field" type="text" pattern="[A-Za-z ]{1,32}"
+                        required />
+                    <br />
+                </div>
+                <div class="email">
+                    <label class="required">E-mail</label>
+                    <input id="email_id" name="email_id" type="email" class="input-field" required />
+                    <br />
+                </div>
+                <div class="phone">
+                    <label class="required">Phone number</label>
+                    <input id="phone_number" name="phone_number" class="input-field" type="tel" pattern="[0-9]{10}"
+                        required />
+                    <br />
+                </div>
+                <label>Comments</label>
+                <input name="message" type="text" />
+                <br />
+
+            </form>
+            <button id="formSubmit" onclick='SubForm()'>Submit</button>
+        </div>
+
+    </div>
+
+    <div class="home">
+        <div class="home-video">
+            <video class="video" playsinline autoplay muted loop preload="auto">
+                <source src="/static/bg-video.webm" type="video/webm" />
+                Your browser does not support the video tag. We suggest to upgrade
+                your browser.
+            </video>
+            <div class="des">
+                <h1>Empowering your Global Aspirations</h1>
+                <p>
+                    Unlock your global potential with our 700+ university partnerships
+                    worldwide.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section style="padding: 10%;display: flex;justify-content: center; background-color: #c8eaff;">
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+
+                        <img src="/static/usa.jpg" alt="USA">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">USA</div>
+                        <div class="blog-slider__text">IndiCan Overseas provides comprehensive study abroad services for
+                            students aspiring to study in the USA. With a vast network of top-tier universities and
+                            expert immigration support, we make studying in the USA a smooth and affordable journey.
+                        </div>
+                        <a href="/study-in-usa" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/canada.jpg" alt="Canada">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Canada</div>
+                        <div class="blog-slider__text">IndiCan Overseas provides customized study solutions for students
+                            seeking to study in Canada. With a wide network of top universities and expert immigration
+                            services, we make studying in Canada a seamless and affordable experience.</div>
+                        <a href="/study-in-canada" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/uk.jpg" alt="UK">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">UK</div>
+                        <div class="blog-slider__text">IndiCan Overseas helps students achieve their dream of studying
+                            in the UK with expert immigration services and a wide network of top universities. We offer
+                            customized study plans and comprehensive support, making studying in the UK an affordable
+                            and seamless experience.</div>
+                        <a href="/study-in-uk" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/Ireland.webp" alt="Ireland">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Ireland</div>
+                        <div class="blog-slider__text">Ireland offers a rich cultural heritage, world-class education,
+                            and a welcoming environment for international students. With a focus on innovation and
+                            technology, studying in Ireland provides opportunities for personal and professional growth.
+                            Experience the beauty of the Emerald Isle and a bright future by studying in Ireland.
+
+
+
+                        </div>
+                        <a href="/study-in-ireland" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/Australia.jpg" alt="Australia">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Australia</div>
+                        <div class="blog-slider__text">Australia is a land of diverse cultures and landscapes, offering
+                            a high standard of living and world-class education. With a strong economy and a supportive
+                            environment for international students, Australia is an ideal destination for those seeking
+                            a bright future and a top-notch education. IndiCan Overseas can help guide you to your study
+                            abroad journey in Australia.</div>
+                        <a href="/study-in-australia" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/new zealand.jpeg" alt="New Zealand">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">New Zealand</div>
+                        <div class="blog-slider__text">With a strong focus on sustainability and
+                            outdoor adventure, New Zealand is an ideal destination for those seeking a unique study
+                            abroad experience. IndiCan Overseas can help guide you to your journey to this beautiful
+                            country for a brighter future.</div>
+                        <a href="/study-in-newzealand" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/Europe.jpg" alt="Europe">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Europe</div>
+                        <div class="blog-slider__text">Europe is a hub of cultural diversity and history, offering
+                            world-renowned universities and a vibrant student culture. With endless opportunities for
+                            personal and professional growth, Europe is an excellent choice for those seeking a
+                            top-notch education and a bright future. IndiCan Overseas can help guide you to your dream
+                            study abroad experience in Europe.</div>
+                        <a href="/study-in-europe" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="/static/Asia.jpg" alt="Asia">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Asia</div>
+                        <div class="blog-slider__text">Asia offers a rich tapestry of cultures and history, with
+                            world-class universities and a thriving education scene. From the bustling cities to the
+                            breathtaking landscapes, Asia provides a unique and enriching study abroad experience.
+                            IndiCan Overseas can help guide you to your journey to this fascinating region for a
+                            brighter future.</div>
+                        <a href="/study-in-asia" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__pagination"></div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <section>
+        <div class="section-01">
+            <h1>Our Core Strengths</h1>
+            <div id="counter" class="counter">
+                <div class="counter-section">
+                    <img src="/static/college.png" alt="College" />
+                    <h1 id="count-num">0</h1>
+                    <p>Global University Tie Ups</p>
+                </div>
+                <div class="counter-section">
+                    <img src="/static/country.png" alt="Country" />
+                    <h1 id="count-num-01">0</h1>
+                    <p>Countries Supported</p>
+                </div>
+                <div class="counter-section">
+                    <img src="/static/trophy.png" alt="trophy" />
+                    <h1 id="count-num-02">0</h1>
+                    <p>Visa Approvals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer layer1"></div>
+
+        <div class="section-02">
+            <div class="image-text">
+                <div class="image"><img class="whyus" src="/static/whyus.jpeg" alt="Why us" /></div>
+                <div class="des-02 animated">
+                    <h1>What makes us unique ?</h1>
+                    <div class="list">
+                        <img src="/static/list-style.png" alt="arrow" />
+                        <p>
+                            We have tie-ups with over 700 universities in 29 countries,
+                            providing a comprehensive range of study options for aspiring
+                            international students.
+                        </p>
+                    </div>
+                    <div class="list">
+                        <img src="/static/list-style.png" alt="arrow" />
+                        <p>
+                            We represent 59 of World's Top 300 Universities according to QS World Rankings 2023
+                        </p>
+                    </div>
+                    <div class="list">
+                        <img src="/static/list-style.png" alt="arrow" />
+                        <p>
+                            The company's team of experienced immigration specialists
+                            provides personalized guidance to help clients navigate the visa
+                            application process with ease.
+                        </p>
+                    </div>
+                    <div class="list">
+                        <img src="/static/list-style.png" alt="arrow" />
+                        <p>
+                            IndiCan Overseas provides tailored study plans based on clients'
+                            individual needs and goals, ensuring they find the right study
+                            program that aligns with their career aspirations.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="spacer layer-01"></div>
+    <section>
+        <div class="section-03 ">
+            <h1>Global Immigration Destinations</h1>
+            <div class="countries animated">
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/USA.png" alt="Australia" />
+                    </div>
+                    <p class="name">USA</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/Canada.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">Canada</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/Australia.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">Australia</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/New Zealand.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">New Zealand</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/UK.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">United Kingdom</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/Singapore.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">Singapore</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/Germany.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">Germany</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/France.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">France</p>
+                </div>
+                <div class="flag">
+                    <div class="image-02">
+                        <img src="/static/flags/many more.png" alt="Canada" />
+                    </div>
+
+                    <p class="name">& many more...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-04">
+        <h1>Our Services</h1>
+        <div class="container-01">
+            <div class="image-01 animated">
+                <img src="/static/student.jpeg" alt="Student" />
+            </div>
+            <div class="des-01 animated">
+                <div class="child">
+                    <h1>For Students</h1>
+                    <p>With a keen ear for your choices and preferences, our counselling experience is so seamless that
+                        you will land in your dream university!</p>
+                    <div class="list-01">
+                        <img src="/static/star.png" alt="arrow" />
+                        <p>Virtual Coaching and Counselling</p>
+                    </div>
+                    <div class="list-01">
+                        <img src="/static/star.png" alt="arrow" />
+                        <p>Applications, Admissions & Visas</p>
+                    </div>
+                    <div class="list-01">
+                        <img src="/static/star.png" alt="arrow" />
+                        <p>High Value Scholarships and Study Loans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-01 container-02">
+            <div class="image-01 image-02 animated">
+                <img src="/static/partners.jpg" alt="Student" />
+            </div>
+            <div class="des-01 animated">
+
+                <div class="child">
+                    <h1>For Partners</h1>
+                    <p>Work with our team and state-of-the-art technology and experience how they can be a game changer
+                        for your business</p>
+                    <div class="list-01">
+                        <img src="/static/star.png" alt="arrow" />
+                        <p>Innovative technology customized for your business</p>
+                    </div>
+                    <div class="list-01">
+                        <img src="/static/star.png" alt="arrow" />
+                        <p>Webinars by University Delegates and our Experts</p>
+                    </div>
+                    <div class="list-01">
+                        <img src="/static/star.png" alt="arrow" />
+                        <p>Unparalleled end-to-end support</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section-05">
+        <div class="container-03">
+            <div class="image-03 animated">
+                <img src="/static/multiplepplaces.jpeg" alt="Multi Flags">
+            </div>
+            <div class="des-03 animated">
+                <h1 class="heading-001">Multi Country Advantage</h1>
+
+                <div class="child-01">
+                    <h1 class="subheading-001">The World is your Campus!</h1>
+                    <p>Aspire for more. Choose what suits you the best from 700+ global universities in 29 countries,
+                        world over. The choices and opportunities our universities offer are endless!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer layer-02"></div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img class="logo-1" src="/static/logo.PNG" alt="" />
+
+            <p class="footer-links">
+                GSTIN :
+                <span style="color: red;">
+                    07GQNPB4864E1ZO
+                </span>
+
+                <br>
+                UDYAM REGISTRATION NUMBER : <span style="color: red;">
+                    UDYAM-DL-03-0023292
+                </span>
+
+            </p>
+
+            <p class="footer-company-name">
+                IndiCan Overseas © <span id="year"></span>
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            <span class="span-2">Our Offices</span>
+            <div style="padding-bottom: 3%">
+                <div class="offices">
+                    <p>Montreal, Canada</p>
+                </div>
+                <div class="offices">
+                    <p>+1 (438) 998-7473</p>
+                </div>
+            </div>
+
+            <div style="padding-bottom: 3%">
+                <div class="offices">
+                    <p>New Delhi, India</p>
+                </div>
+
+                <div class="offices">
+                    <p>+91 99888-66096</p>
+                </div>
+            </div>
+            <div style="padding-bottom: 3%">
+                <div class="offices">
+                    <p>New Delhi, India</p>
+                </div>
+
+                <div class="offices">
+                    <p>+91 62801-41470</p>
+                </div>
+            </div>
+            <div class="offices">
+                <p>
+                    <a href="mailto:indican@indicanoverseas.com">indican@indicanoverseas.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p style="color: white" class="footer-company-about">
+                <span>About the company</span>
+                Offering tailored solutions, comprehensive support and affordable
+                options for international students.
+            </p>
+
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/IndiCan_overseas" target="_blank"><img id="insta" class="socials"
+                        src="/static/social/instagram.png" alt="" /></a>
+                <a href="https://wa.me/+919988866096" target="_blank"><img id="whatsapp" class="socials"
+                        src="/static/social/whatsapp.png" alt="" /></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/script/navbar.js"></script>
+    <script src="/script/index.js" type="text/javascript"></script>
+    <script src="/script/footer.js"></script>
+    <script src="/script/form.js"></script>
+    <script src="/script/disclaimer.js"></script>
+    <script src="/script/disclaimer.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

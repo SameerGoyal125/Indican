@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+.section-01 img{
+    border-radius: 30px;
+    width:60%;
+}
+h1 {
+    font-size: 5rem;
+    font-family: "Poppins", monospace;
+    margin-bottom: 1rem;
+    margin-top: 0%;
+    padding: 5% 0;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Spectral", sans-serif;
+  }
+.section-01{    
+    padding: 5%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.section-01-content{
+    width: 50%;
+    text-align: left;
+}
+.section-01-image{
+    width: 50%;
+
+}
+.c-1{
+    flex-direction: row-reverse;
+}
+.steps h1{
+    font-size: 3rem;
+    font-family: "Poppins", monospace;
+    margin-bottom: 1rem;
+    margin-top: 0%;
+    text-align: center;
+}
+.section-01-content h1{
+    text-align: left;
+}
+.s-1{
+    background-color: #faced5;
+    
+}
+.s-2{
+    background-color: #d5d6ff;
+}
+.Universities {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    
+  }
+  .University {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 40%;
+    height: 30%;
+    margin: 2% 5%;
+
+  }
+  .University .image-02 {
+    width: 20%;
+  }
+  .image-02 img {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+  }
+  .University .name {
+    width: 80%;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    padding-left: 5%;
+    margin: 10px 0;
+  }
+  .University p {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: auto;
+  }
+  .colleges{
+    padding: 10%;
+    padding-top: 0;
+    background-color: #e0ffd5;
+  }
+
+  .section-01 a{
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+    padding: 5% 0;
+  }
+  .spacer{
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url(/static/students/wave2.svg);
+
+}
+.layer2{
+    background-image: url(/static/students/wave1.svg);
+}
+  @media all and (max-width: 767px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+
+    .c-1{
+        flex-direction: column;
+    }
+    .section-01{
+        flex-direction: column;
+    }
+    .section-01-content{
+        width: 90%;
+    }
+    .section-01-image{
+        width: 90%;
+    }
+    .section-01-image img{
+        width: 80%;
+    }
+    .steps h1{
+        font-size: 3rem;
+        text-align: center;
+
+    }
+    .Universities{
+        flex-direction: column;
+    }
+    .University{
+        width: 90%;
+    }
+    .section-01 a{
+        font-size: 1.5rem;
+    }
+}  

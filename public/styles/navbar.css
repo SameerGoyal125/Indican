@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+nav {
+  float: right;
+  right: 0;
+  position: absolute;
+  font-family: 'Shantell Sans', cursive;
+  margin-right: 10px;
+}
+.logo{
+  float: left;
+    width: 25%;
+    height: 100%;
+    padding-left: 3rem;
+    font-weight: bold;
+    left:0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background-color: rgba(251,250,249,1);
+  color: #463f3f;
+  text-decoration: none;
+  font-size: 2.4rem;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px #f6cdaf;
+  margin:10px;
+}
+
+nav ul li a:hover {
+  color: #fb5958;
+}
+
+nav ul li a:not(:only-child):after {
+  content: "\25BE"; /* Down arrow symbol */
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li a:not(:only-child).active-list:after {
+  transform: rotate(180deg);
+}
+nav ul li ul li {
+  width:100%;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: slide 0.5s ease forwards;
+}
+
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 25px;
+  
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+nav ul li ul li:nth-child(1){
+  animation-delay: 100ms;
+}
+nav ul li ul li:nth-child(2){
+  animation-delay: 200ms;
+}
+nav ul li ul li:nth-child(3){
+  animation-delay: 300ms;
+}
+
+  
+.nav-dropdown {
+  position: absolute;
+  z-index: 990;
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+}
+.nav-dropdown{
+  width:250px;
+}
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav{
+    background-color: rgba(251,250,249,1);
+  }
+  .nav-dropdown {
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+    margin-bottom: 20px;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+    
+  }
+  .nav-dropdown{
+    width:90%;
+    margin-left: 9%;
+    margin-top:15px;
+  }
+  nav{
+    margin-right: 0;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #fb5958;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+
+}
+.navigation {
+  height: 70px;
+  background-color: rgba(251,250,249,1);
+  padding:20px 0;
+  padding-bottom: 30px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 998;
+}
+
+.nav-container {
+  max-width: 1000px;
+}
+
+.brand {
+  position: absolute;
+  float: left;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  left: 0;
+}
+
+.brand a,
+.brand a:visited {
+  color: #463f3f;
+  text-decoration: none;
+}
+.logo{
+  z-index: 999;
+  position: relative;
+}
+/*# sourceMappingURL=new1.css.map */
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animated.show {
+  opacity: 1;
+  transform: translateY(0);
+}

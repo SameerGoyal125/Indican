@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+.main img {
+  display: none;
+}
+.main {
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(/static/thank\ you/background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.content {
+  text-align: center;
+  min-width: 50%;
+  max-height: 100vh;
+}
+.content-1 {
+  max-width: 40%;
+  padding: 0 5%;
+}
+h1 {
+  font-family: "Poppins", monospace;
+  font-size: 10rem;
+}
+p {
+  font-family: "Spectral", monospace;
+  font-size: 3rem;
+  font-weight: 500;
+  color: black;
+}
+.main a {
+  text-decoration: none;
+  color: red;
+  font-family: "Spectral", monospace;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.red {
+  display: none;
+}
+.mes{
+    font-size: 5rem;
+}
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .main img {
+    display: block;
+    width: 80%;
+    padding: 0 10%;
+  }
+  .main {
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+    flex-direction: column;
+    height: auto;
+    background-color: #DAE8FF;
+  }
+  .content {
+    text-align: center;
+    min-width: unset;
+    width: 100%;
+  }
+  .content-1 {
+    width: 100%;
+    max-width: unset;
+    padding: 0;
+  }
+  .main a{
+    font-size: 1.5rem;
+  }
+  .mes{
+    font-size: 2rem;
+  }
+}

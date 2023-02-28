@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+h1 {
+  font-size: 5rem;
+  font-family: "Poppins", monospace;
+  margin-bottom: 1rem;
+  margin-top: 0%;
+  padding: 5% 0;
+}
+p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.section-01 {
+  padding: 10%;
+  height: 70vh;
+  background-image: url(/static/canada/Canada\ View.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#pc {
+  display: table;
+}
+#mobile {
+  display: none;
+}
+#degree,#diploma{
+    display: none;
+}
+.section-01-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.section-01-content p {
+  font-family: "Ubuntu Mono", monospace;
+}
+.section-01 h1 {
+  font-family: "Roboto", monospace;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.images img {
+  width: 40%;
+  margin: 5%;
+  border-radius: 5%;
+}
+.section-02 {
+  height: auto;
+  display: flex;
+  background-color: #d9fbff;
+}
+.section-02 h1 {
+  margin-bottom: 4rem;
+}
+.section-02-content {
+  width: 60%;
+  padding: 5%;
+}
+.section-02-content-1 {
+  width: 40%;
+  padding: 5%;
+}
+.list-01 {
+  display: flex;
+  align-items: center;
+}
+
+.list-01 img {
+  width: 3%;
+  height: 3%;
+}
+.list-01 p {
+  margin: 2%;
+  padding-left: 5%;
+}
+.section-03 {
+  height: auto;
+  padding: 5%;
+  background-color: #fff;
+}
+.section-03-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  width: 80%;
+  margin: 5% 0;
+  font-size: 2rem;
+}
+tr {
+  text-align: center;
+}
+
+.col td {
+  border-bottom: 1px solid #79e8b3;
+}
+th,
+td {
+  padding: 1%;
+}
+.data-head {
+  text-align: left;
+  padding-left: 20px;
+}
+.section-04-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  background-color: #d9fbff;
+}
+.section-04-content-01 {
+  width: 50%;
+}
+.section-04-content-01 img {
+  width: 40%;
+  margin: 2%;
+  position: relative;
+  border-radius: 5%;
+}
+.image-1 {
+  top: -40px;
+}
+.image-2 {
+  top: 40px;
+}
+.section-04-content-02 {
+  width: 50%;
+  padding: 10%;
+}
+.section-05{
+    background-color: #fff2d9;
+}
+.Universities {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  
+}
+.University {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 40%;
+  height: 30%;
+  border-radius: 5%;
+  margin: 2% 5%;
+}
+.University .image-02 {
+  width: 10%;
+}
+.image-02 img {
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+.University .name {
+  width: 80%;
+  text-align: left;
+  justify-content: left;
+  display: flex;
+  padding-left: 5%;
+  margin: 10px 0;
+}
+.University p {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: auto;
+}
+.section-06 {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: #ffd9d9;
+}
+.section-06-content-1 {
+  width: 60%;
+}
+.section-06-content-1 img {
+  width: 80%;
+}
+.section-06-content-02 {
+  width: 40%;
+  padding: 5%;
+}
+.spacer{
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url(/static/canada/wave.svg);
+}
+.layer2{
+    background-image: url(/static/canada/wave1.svg);
+}
+.layer3{
+    background-image: url(/static/canada/wave2.svg);
+}
+.layer4{
+    background-image: url(/static/canada/wave2.svg);
+    transform: rotate(180deg);
+}
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .section-01 {
+    height: 100vh;
+    background-image: radial-gradient(
+        circle farthest-corner at 50% 100%,
+        rgba(19, 1, 12, 0.2),
+        rgba(15, 1, 10, 0.7)
+      ),
+      url(/static/canada/Canada\ View\ mobile.jpg);
+    padding-top: 0;
+  }
+  .section-01-content {
+    width: 70%;
+  }
+  .section-02 {
+    flex-direction: column;
+  }
+  .section-02-content {
+    width: 90%;
+  }
+  .section-02-content-1 {
+    width: 90%;
+  }
+  .section-04-content {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .section-04-content-01 {
+    width: 90%;
+  }
+  .section-04-content-02 {
+    width: 80%;
+  }
+  .Universities {
+    flex-direction: column;
+  }
+  .University {
+    width: 90%;
+    height: 30%;
+  }
+  .section-06 {
+    flex-direction: column;
+    padding-top: 10%;
+  }
+  .section-06-content-1 {
+    width: 90%;
+    text-align: center;
+  }
+  #pc {
+    display: none;
+  }
+  #mobile {
+    display: table;
+  }
+  .button-group {
+    display: flex;
+  }
+  #mobile {
+    width: 100%;
+  }
+  #degree,#diploma{
+    display: block;
+}
+.button-group{
+    background-color: #B3FFC7;
+    border-radius: 30px;
+    padding: 1% 5%;
+}
+  .button {
+    background-color: #B3FFC7;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 50%;
+  }
+  .actives {
+    background-color: #79e8b3;
+  }
+    td {
+    border-bottom: 1px solid #79e8b3;
+  }
+}
